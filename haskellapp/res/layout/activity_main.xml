@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<LinearLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/action_settings"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"> 	
+    	   
+	    <android.support.v7.widget.Toolbar
+	        xmlns:app="http://schemas.android.com/apk/res-auto" 
+   			android:id="@+id/my_toolbar"
+   			android:layout_width="match_parent"
+   			android:layout_height="?attr/actionBarSize"
+   			android:background="?attr/colorPrimary"
+   			android:elevation="4dp"
+   			android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+   			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	    
+	    <ImageView
+       		android:contentDescription="@string/desc"
+			android:id="@+id/initial_image1"
+   			android:layout_width="fill_parent"
+   			android:layout_height="fill_parent"
+   			android:layout_weight="1"
+   			android:visibility="gone" 
+    		android:adjustViewBounds="true"
+    		android:src="@drawable/hugs" />
+		
+	
+
+        
+
+    	<LinearLayout 
+    		android:layout_width="match_parent"
+    		android:layout_height="0.0dp"
+    		android:layout_weight="0.9"
+    		android:orientation="vertical"> 
+    		
+    		<TextView
+     			android:id="@+id/text_id"
+      			android:layout_width="fill_parent"
+      			android:layout_height= "match_parent" 
+      			android:gravity="bottom|left"
+                android:ellipsize="end"
+      			android:background="@android:color/white" 
+      			android:textColor="@android:color/black"
+      			android:textColorHighlight="@android:color/primary_text_dark"/>
+  		
+      </LinearLayout>
+    	
+    		<!--
+    		
+    			android:textSize="32sp"
+    		
+    			android:textIsSelectable="true"
+    			
+      			android:onClick="onClick"
+				android:clickable="true"
+				android:focusable="true"
+      			android:focusableInTouchMode="true"
+      			android:clickable="true"
+				-->
+    	
+	  <LinearLayout 
+		    android:layout_width="match_parent"
+    		android:layout_height="0.0dp"
+    		android:layout_weight="0.1"
+    		android:background="@android:color/darker_gray"
+    		android:orientation="horizontal"> 	
+    
+	  
+	      
+		     <EditText android:id="@+id/edit_message"
+        		android:layout_width = "0.0dp" 		
+        		android:layout_height= "50.0dp" 
+        		android:layout_weight="0.40"
+        		android:gravity="start|center"
+        		android:hint="@string/edit_message" 
+        		android:textColor="@android:color/white"
+      			android:textColorHighlight="@android:color/primary_text_dark"/>
+ 				
+			 <ProgressBar
+			    android:id="@+id/loadingPanel"
+			    android:layout_weight="0.2"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:indeterminate="true" />
+	
+			<Button
+			    android:id="@+id/button_send"
+        		android:layout_width="10.0dp"
+        		android:layout_height="50.0dp"
+				android:layout_weight="0.1"
+    			android:text="@string/button_send"
+    			android:onClick="main_function" /> 
+			 	     
+		     
+    		<Button android:id="@+id/button_cancel"
+    		    android:gravity="center"
+    		    android:layout_weight="0.2"
+    			android:layout_width="20.0dp"
+    			android:layout_height="50.0dp"
+    			android:text="@string/button_clear"
+    			android:onClick="cancel_event"/>
+    	
+   
+		</LinearLayout>    
+    		
+    			
+    	<!--  
+    	android:layout_alignParentLeft="true"
+    	android:layout_toRightOf ="@id/edit_message"
+    	
+		<EditText android:id="@+id/max"
+	    	android:layout_weight="0"
+        	android:layout_width= "match_parent"
+        	android:layout_height= "10dp"
+        	android:gravity = "center"
+        	android:hint="@string/max"
+        	android:visibility="gone"
+        	android:inputType="number"  />
+    	-->
+		
+    
+		<!-- android:visibility="gone" -->
+    
+	</LinearLayout>
+
+
+

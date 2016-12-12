@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   		    
+    <item  			   
+       android:id="@+id/action_favorite"
+       android:icon="@drawable/ic_action_search" 
+       android:title="@string/action_favorite"
+       android:showAsAction="ifRoom">
+    
+    	<menu>
+			<group android:checkableBehavior="single">
+    			<item
+        			android:id="@+id/menu_one"
+        			android:orderInCategory="1"
+        			android:showAsAction="never"
+        			android:title="@string/one_string"/>
+
+				<item
+        			android:id="@+id/menu_two"
+        			android:orderInCategory="2"
+        			android:showAsAction="never"
+        			android:title="@string/two_string"/>
+
+				<item
+        			android:id="@+id/menu_three"
+        			android:orderInCategory="3"
+        			android:showAsAction="never"
+        			android:title="@string/three_string"/>	
+				
+				<item
+        			android:id="@+id/menu_four"
+        			android:orderInCategory="4"
+        			android:showAsAction="never"
+        			android:title="@string/four_string"/>
+  			</group>
+		</menu>
+		
+    </item>	
+
+    <item android:id="@+id/action_setting"
+       android:title="@string/cleaning"
+       android:showAsAction="never"/>
+        
+    
+    <item  			   
+       android:id="@+id/set_limits"
+       android:icon="@drawable/ic_action_search" 
+       android:title="@string/set_limits"
+       android:showAsAction="ifRoom">
+    
+    	<menu>
+			<group android:checkableBehavior="single">
+    			<item
+        			android:id="@+id/menu_small"
+        			android:orderInCategory="1"
+        			android:showAsAction="never"
+        			android:title="@string/small"/>
+
+				<item
+        			android:id="@+id/menu_normal"
+        			android:orderInCategory="2"
+        			android:showAsAction="never"
+        			android:title="@string/normal"/>
+
+				<item
+        			android:id="@+id/menu_big"
+        			android:orderInCategory="3"
+        			android:showAsAction="never"
+        			android:title="@string/big"/>	
+				
+  			</group>
+		</menu>
+		
+    </item>	
+    
+   
+    
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hugs Interpreter</string>
+    <string name="edit_message">Enter Expression</string>
+    <string name="button_send">Eval</string>
+    <string name="button_clear">Cancel</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="max">750</string>
+    <color name="black">#000000</color>
+    <string name="action_favorite">Set Output Limit</string>
+    <string name="menu_set">Number</string>
+     <string name="one_string">Very Small</string>
+    <string name="two_string">Small</string>    
+    <string name="three_string">Normal</string>    
+    <string name="four_string">Large</string>
+    <string name="desc">Initial Image</string>
+    <string name="set_limits">Set Intern Limit</string>
+    <string name="small">Small</string>
+    <string name="normal">Normal</string>    
+    <string name="big">Big</string>  
+    <string name="cleaning">History Clean</string>
+    
+</resources>
